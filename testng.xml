@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+
+
+    <parameter name="email" value="mmmmmmm123198@email.com"/>
+    <parameter name="password" value="123123123"/>
+    <parameter name="firstName" value="MyName"/>
+    <parameter name="lastName" value="MyLastName"/>
+    <parameter name="city" value="MyCity"/>
+    <parameter name="zipCode" value="12345"/>
+    <parameter name="address" value="MyAddress"/>
+    <parameter name="mobilePhone" value="0123456789"/>
+
+
+
+    <test
+            name="OrderPurchaseTest">
+        <classes>
+            <class name="MainTest.mainTest">
+
+                <methods>
+                    <include name="orderTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="firstName" value="MyName"/>
+  <parameter name="lastName" value="MyLastName"/>
+  <parameter name="zipCode" value="12345"/>
+  <parameter name="password" value="123123123"/>
+  <parameter name="address" value="MyAdress"/>
+  <parameter name="mobilePhone" value="0123456789"/>
+  <parameter name="city" value="MyCity"/>
+  <parameter name="email" value="mmmmmmmmmm123198@email.com"/>
+  <test thread-count="5" name="OrderPurchaseTest(failed)">
+    <classes>
+      <class name="MainTest.mainTest">
+        <methods>
+          <include name="orderTest" invocation-numbers="0"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- MainTest.mainTest -->
+    </classes>
+  </test> <!-- OrderPurchaseTest(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->
